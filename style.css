@@ -1,0 +1,29 @@
+/* Add your custom styles here */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+}
+
+/* Adjust chat embed positioning and size */
+#rml-room-1 {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+}
