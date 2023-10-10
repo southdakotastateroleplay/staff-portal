@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Staff Management Site</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Welcome to the Staff Management Site</h1>
+
+    <h2>Report Moderation</h2>
+    <form id="reportForm">
+        <label for="report">Report:</label><br>
+        <textarea id="report" name="report" rows="4" cols="50"></textarea><br>
+        <button type="submit">Submit Report</button>
+    </form>
+
+    <h2>Clock In</h2>
+    <button id="clockInButton">Clock In</button>
+
+    <!-- Chat Embed -->
+    <div
+        id="rml-room-1"
+        data-rml-room
+        data-rml-version="12.sep.2022"
+    ></div>
+
+    <script>
+        // JavaScript for handling form submission
+        document.getElementById('reportForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const report = document.getElementById('report').value;
+            // TODO: Send the report to the server for processing and storage
+            console.log('Report submitted:', report);
+        });
+
+        // JavaScript for handling clock-in button click
+        document.getElementById('clockInButton').addEventListener('click', function() {
+            const currentTime = new Date().toLocaleTimeString();
+            // TODO: Send clock-in time to the server for recording
+            console.log('Clocked in at:', currentTime);
+        });
+    </script>
+
+    <!-- Chat Embed Script -->
+    <script>
+        // Chat embed script as before
+    </script>
+    <script src="https://embed.roomlio.com/embed.js"></script>
+</body>
+</html>
