@@ -8,7 +8,7 @@ body {
     list-style-type: none;
     padding: 10px;
     margin: 0;
-    background-color: #D2B48C; /* Light brown color */
+    background-color: #3498db; /* Blue color */
     overflow: hidden;
 }
 
@@ -29,13 +29,13 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #4CAF50; /* Dark green color */
+    color: #3498db; /* Blue color */
 }
 
 form {
     max-width: 500px;
     margin: 0 auto;
-    background-color: #F5F5DC; /* Beige color */
+    background-color: #ecf0f1; /* Light grayish blue color */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
@@ -58,7 +58,7 @@ input[type="text"] {
 
 button {
     padding: 10px 20px;
-    background-color: #000; /* Black button color */
+    background-color: #2980b9; /* Darker blue button color */
     color: white;
     border: none;
     border-radius: 5px;
@@ -66,7 +66,7 @@ button {
 }
 
 button:hover {
-    background-color: #333; /* Darker shade of black for hover */
+    background-color: #1abc9c; /* Slightly lighter shade of blue for hover */
 }
 
 #submissionMessage {
