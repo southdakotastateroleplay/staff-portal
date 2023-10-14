@@ -6,7 +6,9 @@
   <title>SDSRP Server Status</title>
   <style>
     body {
-      padding-top: 30px; /* Add some padding at the top to accommodate the taskbar */
+      margin: 0;
+      padding-top: 30px;
+      overflow: hidden;
     }
     .taskbar {
       width: 100%;
@@ -18,6 +20,7 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      z-index: 1000;
     }
     .taskbar a {
       margin-right: 20px;
@@ -25,12 +28,13 @@
       color: #333;
       font-weight: bold;
     }
-    .iframe-container {
-      margin-top: 40px; /* Adjust to match the taskbar's height */
-    }
     iframe {
+      position: fixed;
+      top: 40px;
+      left: 0;
       width: 100%;
-      height: calc(100% - 40px); /* Adjust to match the taskbar's height */
+      height: calc(100% - 40px);
+      border: none;
     }
   </style>
 </head>
@@ -40,9 +44,7 @@
   <a href="/">Go Home</a>
 </div>
 
-<div class="iframe-container">
-  <iframe src="https://docs.google.com/document/d/e/2PACX-1vT1LD34Vl9Wi2b4S1Tfbl2T6vjxVz2PfKy2DYKgTJm8aylqRCRXVvRqo0DtZOLaIJ0ke3wvtrAVkGxl/pub?embedded=true"></iframe>
-</div>
+<iframe src="https://docs.google.com/document/d/1WpcHgJPTJZsO74nbIu5gbtSbRNgkx9e3xXZm11TaVlQ/edit?usp=sharing"></iframe>
 
 </body>
 </html>
