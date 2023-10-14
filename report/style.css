@@ -8,9 +8,11 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Styles for form in thank_you.html */
 form {
     max-width: 500px;
     margin: 0 auto;
+    text-align: center;
 }
 
 label {
@@ -18,15 +20,17 @@ label {
     margin-bottom: 5px;
 }
 
+/* Adjust textarea and input styles */
 textarea,
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
+/* Adjust button styles */
 button {
     padding: 10px 20px;
     background-color: #4CAF50;
@@ -40,9 +44,11 @@ button:hover {
     background-color: #45a049;
 }
 
+/* Styles for submission message */
 #submissionMessage {
     margin-top: 20px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    text-align: center;
 }
