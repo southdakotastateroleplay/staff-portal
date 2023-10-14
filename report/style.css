@@ -1,14 +1,15 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: #f9f9f9; /* Light background color */
 }
 
 .navbar {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     background-color: #D2B48C; /* Light brown color */
-    padding: 10px; /* Add some padding to the navbar */
+    overflow: hidden;
 }
 
 .navbar li {
@@ -28,16 +29,22 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    color: #4CAF50; /* Dark green color */
 }
 
 form {
     max-width: 500px;
     margin: 0 auto;
+    background-color: #F5F5DC; /* Beige color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
 textarea,
@@ -51,7 +58,7 @@ input[type="text"] {
 
 button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #000; /* Black button color */
     color: white;
     border: none;
     border-radius: 5px;
@@ -59,7 +66,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #333; /* Darker shade of black for hover */
 }
 
 #submissionMessage {
