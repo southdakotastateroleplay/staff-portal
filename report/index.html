@@ -1,59 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Staff Report Site</title>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        iframe {
-            width: 100%;
-            height: calc(100% - 50px); /* Adjust for the taskbar height */
-            border: none;
-        }
-        /* Taskbar styles */
-        #taskbar {
-            background-color: #f0f0f0;
-            border-bottom: 1px solid #ccc;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .outlined {
-            border: 2px solid #000; /* Change color as needed */
-            padding: 10px 20px;
-            background-color: transparent;
-            color: #000; /* Change color as needed */
-            cursor: pointer;
-        }
-        .outlined:hover {
-            background-color: #000; /* Change color as needed */
-            color: #fff; /* Change color as needed */
-        }
-    </style>
+    <title>Moderation Report SDSRP</title>
 </head>
 <body>
-    <!-- Taskbar with "Go Home" button -->
-    <nav id="taskbar">
-        <button class="outlined" onclick="goHome()">Go Home</button>
-    </nav>
+    <h1>Moderation Report SDSRP</h1>
+    <form id="customForm">
+        <label for="explanation">1. Detailed explanation of the moderation:</label><br>
+        <textarea id="explanation" name="explanation" rows="5" cols="40"></textarea><br><br>
 
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFgKdnPFL5IDWrtgmhu4H38rmK8r76iY66bu0anAxQkajfhg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <label for="username">2. Username of user you have moderated:</label><br>
+        <input type="text" id="username" name="username"><br><br>
 
-    <!-- Include the chat script -->
-    <script>
-        // Chat script goes here
-    </script>
+        <label for="video">3. Video evidence (if possible) - Google Drive Link:</label><br>
+        <input type="text" id="video" name="video"><br><br>
 
-    <script>
-        function goHome() {
-            // Redirect to the root ("/")
-            window.location.href = '/';
-        }
-    </script>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="submissionMessage"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
