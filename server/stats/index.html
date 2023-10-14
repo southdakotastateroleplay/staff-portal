@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SDSRP Status</title>
+  <title>SDSRP Server Status</title>
   <style>
     body {
       padding-top: 30px; /* Add some padding at the top to accommodate the taskbar */
@@ -25,6 +25,13 @@
       color: #333;
       font-weight: bold;
     }
+    .iframe-container {
+      margin-top: 40px; /* Adjust to match the taskbar's height */
+    }
+    iframe {
+      width: 100%;
+      height: calc(100% - 40px); /* Adjust to match the taskbar's height */
+    }
   </style>
 </head>
 <body>
@@ -33,7 +40,9 @@
   <a href="/">Go Home</a>
 </div>
 
-<iframe src="https://sdsrp.sspcschools.com/mypage_add1" width="100%" height="calc(100% - 40px)" style="margin-top: 40px;"></iframe>
+<div class="iframe-container">
+  <iframe src="https://docs.google.com/document/d/e/2PACX-1vT1LD34Vl9Wi2b4S1Tfbl2T6vjxVz2PfKy2DYKgTJm8aylqRCRXVvRqo0DtZOLaIJ0ke3wvtrAVkGxl/pub?embedded=true"></iframe>
+</div>
 
 </body>
 </html>
