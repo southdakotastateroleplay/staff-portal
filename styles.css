@@ -7,7 +7,7 @@ body {
 
 .container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 20px auto; /* Added margin to provide some space from the top */
   padding: 20px;
 }
 
@@ -27,6 +27,7 @@ h1 {
 }
 
 button {
+  margin-bottom: 10px; /* Added margin between buttons */
   padding: 10px 20px;
   background-color: #3498db;
   border: none;
@@ -34,6 +35,8 @@ button {
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
+  display: block; /* Make buttons display as block elements */
+  width: 100%; /* Make buttons fill the container width */
 }
 
 button:hover {
@@ -41,7 +44,7 @@ button:hover {
 }
 
 .logout-button {
-  background-color: #e74c3c; /* Red color for logout button */
+  background-color: #e74c3c;
 }
 
 .logout-button:hover {
