@@ -11,13 +11,12 @@ document.getElementById('customForm').addEventListener('submit', function(event)
         videoLink
     };
 
-    // Retrieve existing submissions or initialize an empty array
     let submissions = JSON.parse(localStorage.getItem('submissions')) || [];
     submissions.push(formData);
 
-    // Save to local storage
     localStorage.setItem('submissions', JSON.stringify(submissions));
 
-    // Redirect to the thank you page
-    window.location.href = 'thank_you.html'; // Replace with your thank you page URL
+    alert('Form submitted successfully!');
+
+    window.location.href = 'thank_you.html';
 });
