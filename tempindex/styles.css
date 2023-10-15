@@ -7,11 +7,9 @@ body {
 
 .container {
   max-width: 800px;
-  margin: 50px auto; /* Adjusted margin to center the container */
+  margin: 20px auto; /* Added margin to center the container */
   padding: 20px;
-  display: flex;
-  flex-direction: column; /* Align items in a column */
-  align-items: center; /* Center horizontally */
+  text-align: center; /* Center align text */
 }
 
 header {
@@ -33,8 +31,14 @@ a {
   text-decoration: none; /* Remove underline from links */
 }
 
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+}
+
 button {
-  margin-bottom: 10px; /* Added margin between buttons */
   padding: 15px 30px; /* Adjusted padding for larger buttons */
   background-color: #d2a172; /* Light brown button color */
   border: none;
@@ -42,8 +46,6 @@ button {
   font-size: 18px; /* Increased font size */
   cursor: pointer;
   border-radius: 5px;
-  display: block; /* Display buttons as blocks to create a column */
-  width: 100%; /* Make buttons fill the container width */
 }
 
 button:hover {
