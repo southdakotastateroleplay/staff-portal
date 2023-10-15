@@ -41,7 +41,7 @@ button {
 }
 
 button:not(:last-child) {
-  margin-right: 10px; /* Margin between buttons */
+  margin-right: 20px; /* Increased margin between buttons */
 }
 
 button:hover {
