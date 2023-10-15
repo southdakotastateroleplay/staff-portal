@@ -7,8 +7,11 @@ body {
 
 .container {
   max-width: 800px;
-  margin: 20px auto; /* Added margin to provide some space from the top and sides */
+  margin: 20px auto; /* Added margin to center the container */
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+  justify-content: center; /* Center horizontally */
 }
 
 header {
@@ -31,6 +34,7 @@ a {
 }
 
 button {
+  margin: 0 10px 10px 0; /* Added margin to separate buttons */
   padding: 10px 20px;
   background-color: #d2a172; /* Light brown button color */
   border: none;
@@ -38,10 +42,6 @@ button {
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-}
-
-button:not(:last-child) {
-  margin-right: 20px; /* Increased margin between buttons */
 }
 
 button:hover {
