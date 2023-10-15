@@ -18,6 +18,11 @@ header {
   margin-bottom: 20px;
 }
 
+.header-buttons {
+  margin-top: 10px; /* Adjusted top margin */
+  margin-right: 20px; /* Adjusted right margin */
+}
+
 .header-buttons button {
   margin-left: 10px;
 }
