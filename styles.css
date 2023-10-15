@@ -2,12 +2,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f5e5d1; /* Light brown background color */
 }
 
 .container {
   max-width: 800px;
-  margin: 20px auto; /* Added margin to provide some space from the top */
+  margin: 20px auto; /* Added margin to provide some space from the top and sides */
   padding: 20px;
 }
 
@@ -27,26 +27,19 @@ h1 {
 }
 
 button {
-  margin-bottom: 10px; /* Added margin between buttons */
+  margin-bottom: 10px;
   padding: 10px 20px;
-  background-color: #3498db;
+  background-color: #d2a172; /* Light brown button color */
   border: none;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  display: block; /* Make buttons display as block elements */
-  width: 100%; /* Make buttons fill the container width */
+  display: block;
+  width: 100%;
+  border: 1px solid #a8814a; /* Border color */
 }
 
 button:hover {
-  background-color: #2980b9;
-}
-
-.logout-button {
-  background-color: #e74c3c;
-}
-
-.logout-button:hover {
-  background-color: #c0392b;
+  background-color: #b7844f; /* Darker brown on hover */
 }
