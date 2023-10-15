@@ -7,7 +7,7 @@ body {
 
 .container {
   max-width: 800px;
-  margin: 20px auto; /* Added margin to center the container */
+  margin: 50px auto; /* Adjusted margin to center the container */
   padding: 20px;
   display: flex;
   flex-direction: column; /* Align items in a column */
@@ -42,6 +42,8 @@ button {
   font-size: 18px; /* Increased font size */
   cursor: pointer;
   border-radius: 5px;
+  display: block; /* Display buttons as blocks to create a column */
+  width: 100%; /* Make buttons fill the container width */
 }
 
 button:hover {
