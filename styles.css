@@ -26,8 +26,11 @@ h1 {
   margin-bottom: 20px;
 }
 
+a {
+  text-decoration: none; /* Remove underline from links */
+}
+
 button {
-  margin-bottom: 10px;
   padding: 10px 20px;
   background-color: #d2a172; /* Light brown button color */
   border: none;
@@ -35,9 +38,10 @@ button {
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  display: block;
-  width: 100%;
-  border: 1px solid #a8814a; /* Border color */
+}
+
+button:not(:last-child) {
+  margin-right: 10px; /* Margin between buttons */
 }
 
 button:hover {
