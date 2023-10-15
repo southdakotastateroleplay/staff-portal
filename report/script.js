@@ -18,5 +18,5 @@ document.getElementById('customForm').addEventListener('submit', function(event)
 
     alert('Form submitted successfully!');
 
-    window.location.href = 'thank_you.html';
+    window.location.href = 'submit-form.html';
 });
