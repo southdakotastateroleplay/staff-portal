@@ -1,17 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDSRP Staff</title>
   <link rel="stylesheet" href="styles.css">
-  <title>Site Maintenance</title>
 </head>
+
 <body>
-  <div class="maintenance-container">
-    <div class="maintenance-box">
-      <h1>Site Under Maintenance</h1>
-      <p>We're sorry for the inconvenience. Our site is currently undergoing maintenance. Please check back later.</p>
+  <header>
+    <div class="header-buttons">
+      <button id="settingsButton">Settings</button>
+      <button id="logoutButton" class="logout-button">Logout</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>SDSRP Staff</h1>
+    <div class="button-row">
+      <a href="/report">
+        <button>Moderation Report</button>
+      </a>
+      <a href="https://www.roblox.com/games/2534724415" target="_blank">
+        <button>ER:LC</button>
+      </a>
+      <a href="https://www.sdsrp.com" target="_blank">
+        <button>SDSRP</button>
+      </a>
+      <a href="https://console.jumpcloud.com" target="_blank">
+        <button>Console</button>
+      </a>
+      <a href="/server/stats">
+        <button>Server Status</button>
+      </a>
+      <a href="https://app.netlify.com/sites/sdsrpstaff/forms" target="_blank">
+        <button>Moderation Submissions</button>
+      </a>
+      <a href="https://app.netlify.com/sites/sdsrpratings/forms/652af06611f9f200087c1e10" target="_blank">
+        <button>Moderation Ratings</button>
+      </a>
     </div>
   </div>
+
+  <script>
+    // JavaScript for button functionality
+    const settingsButton = document.getElementById('settingsButton');
+    settingsButton.addEventListener('click', () => {
+      window.location.href = 'https://console.jumpcloud.com/userconsole#/profile';
+    });
+
+    const logoutButton = document.getElementById('logoutButton');
+    logoutButton.addEventListener('click', () => {
+      window.location.href = 'https://console.jumpcloud.com/userconsole/logout';
+    });
+  </script>
 </body>
+
 </html>
