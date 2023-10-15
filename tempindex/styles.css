@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5e5d1; /* Light brown background color */
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto; /* Added margin to provide some space from the top and sides */
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.header-buttons button {
+  margin-left: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #d2a172; /* Light brown button color */
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:not(:last-child) {
+  margin-right: 10px; /* Margin between buttons */
+}
+
+button:hover {
+  background-color: #b7844f; /* Darker brown on hover */
+}
