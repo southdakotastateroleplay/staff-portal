@@ -5,15 +5,15 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
 }
 
 .taskbar {
   background-color: #875e31; /* Brown taskbar color */
-  padding: 10px;
-  text-align: right;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
 }
 
 .go-home {
@@ -43,7 +43,19 @@ label, input, textarea {
   margin-bottom: 15px;
 }
 
-input, textarea {
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the input placeholder */
+input::placeholder {
+  color: #ccc;
+}
+
+textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
