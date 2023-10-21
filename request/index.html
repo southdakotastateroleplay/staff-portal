@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="taskbar">
+    <a href="/console/staff" class="go-home">Go Home</a>
+  </div>
+  <form name="emailrequest" method="POST" netlify>
+    <label for="username">Username (@sdsrp.com):</label>
+    <input type="text" id="username" name="username" pattern="^.+@sdsrp\.com$" required>
+    <p class="note">Please enter a valid username ending with @sdsrp.com</p>
+
+    <label for="rank">What rank are you?</label>
+    <input type="text" id="rank" name="rank" required>
+
+    <label for="reason">Why are you requesting an email?</label>
+    <textarea id="reason" name="reason" rows="4" required></textarea>
+
+    <button type="submit" class="button">Submit</button>
+  </form>
+</body>
+</html>
