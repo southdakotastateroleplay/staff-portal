@@ -10,6 +10,24 @@ body {
   height: 100vh;
 }
 
+.taskbar {
+  background-color: #875e31; /* Brown taskbar color */
+  padding: 10px;
+  text-align: right;
+}
+
+.go-home {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #634422; /* Darker brown button color */
+}
+
+.go-home:hover {
+  background-color: #472d16; /* Darker brown on hover */
+}
+
 form {
   background-color: #fff;
   padding: 20px;
