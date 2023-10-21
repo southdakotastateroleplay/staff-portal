@@ -6,7 +6,6 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .taskbar {
@@ -28,7 +27,10 @@ body {
   background-color: #472d16; /* Darker brown on hover */
 }
 
-form {
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
